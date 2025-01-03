@@ -24,4 +24,4 @@ jobs:
           push: true
           context: ./express-app             
           file: ./express-app/Dockerfile    
-          tags: RadeCzu/express-task:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/express-task:latest
