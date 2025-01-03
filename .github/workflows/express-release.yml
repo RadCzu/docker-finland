@@ -22,4 +22,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: radeczu/express-task:latest
+          context: .             
+          file: ./express-app/Dockerfile    
+          tags: RadeCzu/express-task:latest
